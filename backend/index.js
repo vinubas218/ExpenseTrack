@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose')
 const cors = require('cors')
 const express = require('express')
@@ -5,9 +6,6 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 app.use(cors())
-
-const PORT = 8000
-const MONGO_URI = "mongodb+srv://vinuba218:Vinu123@cluster0.ha3bo.mongodb.net/"
 
 const savingsSchema = new mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'register', required: true },
@@ -96,7 +94,7 @@ app.post('/api/createaccount', (req, res) => {
 
 const connected = async () => {
     try {
-        await mongoose.connect(MONGO_URI)
+        await mongoose.connect(process.env.MONGO_URI);
         console.log("DB connected ")
     } catch (error) {
         console.log(error)
@@ -104,7 +102,8 @@ const connected = async () => {
     }
 }
 
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, async () => {
     await connected()
-    console.log("Server running in port 8000")
+    console.log(`Server running in port ${PORT}`)
 })
