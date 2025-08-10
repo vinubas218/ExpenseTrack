@@ -39,7 +39,7 @@ Expensetrack is a web-based application designed to help users efficiently track
 
 1. 📥 Clone the repo:  
    ```bash
-   git clone https://github.com/yourusername/expensetrack.git
+   git clone https://github.com/vinubas218/expensetrack.git
    cd expensetrack
 
 2. 📦 Install backend dependencies:
