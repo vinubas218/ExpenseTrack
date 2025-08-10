@@ -24,7 +24,7 @@ const Login = () => {
       .then(result => {
         if (result.data) {
           localStorage.setItem("register", JSON.stringify(result.data));
-          console.log(result)
+          //console.log(result)
           navigate('/homepage')
         } else {
           SetError(result.data)

@@ -25,7 +25,7 @@ const CreateAccount = () => {
         axios.post('https://expensetrack-yn8y.onrender.com/api/createaccount', { name, email, password })
             .then(result => {
                 localStorage.setItem("register", JSON.stringify(result.data));
-                console.log(result)
+                //console.log(result)
                 navigate('/login')
             })
             .catch(error => { console.log(error) })
