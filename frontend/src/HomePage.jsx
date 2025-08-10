@@ -98,21 +98,23 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="py-10 pb-10 px-6 md:px-20 shadow-2xl bg-white text-center rounded-2xl">
-                <h2 className="text-3xl font-bold text-emerald-600 mb-8">About ExpenseTrack</h2>
-                <p className="text-gray-700 md:text-xl mx-auto md:leading-10">
-                    ExpenseTrack is a fast, intuitive monthly expense tracker built for real people.
-                    Whether you're managing rent, groceries, personal savings, or small business expenses,
-                    it helps you stay on top of your financial activity with ease. With a clean interface and
-                    quick entry system, you can record your income and expenses in seconds. Visual dashboards
-                    and smart category breakdowns make it easy to understand your spending habits at a glance.
-                    Say goodbye to messy spreadsheets — ExpenseTrack keeps everything simple, secure, and
-                    organized. Your data is responsive across devices and fully under your control, empowering
-                    you to build better money habits one month at a time.
-                </p>
+            <div className='py-12'>
+                <div className="py-10 px-6 md:px-20 shadow-2xl bg-white text-center rounded-2xl">
+                    <h2 className="text-3xl font-bold text-emerald-600 mb-8">About ExpenseTrack</h2>
+                    <p className="text-gray-700 md:text-xl mx-auto md:leading-10">
+                        ExpenseTrack is a fast, intuitive monthly expense tracker built for real people.
+                        Whether you're managing rent, groceries, personal savings, or small business expenses,
+                        it helps you stay on top of your financial activity with ease. With a clean interface and
+                        quick entry system, you can record your income and expenses in seconds. Visual dashboards
+                        and smart category breakdowns make it easy to understand your spending habits at a glance.
+                        Say goodbye to messy spreadsheets — ExpenseTrack keeps everything simple, secure, and
+                        organized. Your data is responsive across devices and fully under your control, empowering
+                        you to build better money habits one month at a time.
+                    </p>
+                </div>
             </div>
 
-            <div className='pt-24'>
+            <div className='md:pt-24 pt-12'>
                 <p className='text-4xl md:text-5xl md:pb-12 leading-14 md:text-center'>See Why People Love ExpenseTrack</p>
                 <div className='md:ml-28'>
                     {reviews.map((review) => (
