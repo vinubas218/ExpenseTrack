@@ -1,4 +1,4 @@
-💸 Expensetrack
+💸 ExpenseTrack
 
 📌 **Overview**  
 Expensetrack is a web-based application designed to help users efficiently track and manage their expenses. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), it provides a smooth and intuitive way to handle your personal finances.
