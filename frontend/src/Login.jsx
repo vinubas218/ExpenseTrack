@@ -20,7 +20,7 @@ const Login = () => {
     }
     SetError("")
 
-    axios.post('http://localhost:8000/api/login', { email, password })
+    axios.post('https://expensetrack-yn8y.onrender.com/api/login', { email, password })
       .then(result => {
         if (result.data) {
           localStorage.setItem("register", JSON.stringify(result.data));

@@ -88,7 +88,7 @@ const Expense = () => {
 
     const handleSave = async () => {
         const [year, month] = selectedDate.split("-")
-        await fetch('http://localhost:8000/api/savings', {
+        await fetch('https://expensetrack-yn8y.onrender.com/api/savings', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -102,7 +102,7 @@ const Expense = () => {
     }
 
     const fetchSavings = async () => {
-        const res = await fetch(`http://localhost:8000/api/savings/${userId}`)
+        const res = await fetch(`https://expensetrack-yn8y.onrender.com/api/savings/${userId}`)
         const data = await res.json()
         SetLineData(data)
     }

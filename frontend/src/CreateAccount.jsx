@@ -22,7 +22,7 @@ const CreateAccount = () => {
         }
         SetError("")
 
-        axios.post('http://localhost:8000/api/createaccount', { name, email, password })
+        axios.post('https://expensetrack-yn8y.onrender.com/api/createaccount', { name, email, password })
             .then(result => {
                 localStorage.setItem("register", JSON.stringify(result.data));
                 console.log(result)
